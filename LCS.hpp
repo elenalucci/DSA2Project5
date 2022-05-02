@@ -14,8 +14,9 @@ class LCS{
 		std::ifstream inFile;
 		int m;
 		int n;
+		int numStrings;
 		void LoadTwoStrings();
-		//void LoadMultiStrings();
+		void LoadMultiStrings();
 		
 
 	public:
@@ -23,7 +24,7 @@ class LCS{
 		void RunLCS(std::string s1, std::string s2);
 		void PrintLCS(int x, int y);
 		void RunPart1();
-		//void RunPart2();
+		void RunPart2();
 
 };
 #endif

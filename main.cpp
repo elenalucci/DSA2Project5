@@ -7,6 +7,6 @@ int main(){
 	LCS lcs;
 
 	lcs.RunPart1();
-	//lcs.RunPart2();
+	lcs.RunPart2();
 	return 0;
 }

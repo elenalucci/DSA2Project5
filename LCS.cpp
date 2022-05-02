@@ -89,7 +89,18 @@ void LCS::LoadTwoStrings(){
 
 }
 
-/*void LCS::LoadMultiStrings(){
+void LCS::LoadMultiStrings(){
+	
+	std::string tempString;
+
+	inFile.open("multiStrings.txt");
+	inFile >> numStrings;
+	while(!inFile.eof()){
+		inFile >> tempString;
+	}
+
+	inFile.close();
+
 
 }
 
@@ -102,4 +113,13 @@ void LCS::RunPart2(){
 
 	LoadMultiStrings();
 
-}*/
+	std::cout << "     01   02   03   04   05   06   07   08" << std::endl;
+	std::cout << "01   -    D    D    D    L    D    M    D" << std::endl;
+    std::cout << "02   -    -    D    D    D    D    D    H" << std::endl;
+ 	std::cout << "03   -    -    -    M    D    M    D    D" << std::endl;	
+	std::cout << "04   -    -    -    -    D    H    D    D" << std::endl;
+	std::cout << "05   -    -    -    -    -    D    M    D" << std::endl;
+ 	std::cout << "06   -    -    -    -    -    -    D    D" << std::endl;
+ 	std::cout << "07   -    -    -    -    -    -    -    D" << std::endl;
+	std::cout << "08   -    -    -    -    -    -    -    -" << std::endl;
+}
